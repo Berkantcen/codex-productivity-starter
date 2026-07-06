@@ -42,14 +42,21 @@ existing guidance by default, and fills practical first drafts where it can.
 For empty workspaces, it asks a short set of plain-language questions first and
 uses the answers to create useful initial guidance.
 
-To install from this repository as a local marketplace during pilot rollout:
+To install from GitHub:
 
 ```bash
-codex plugin marketplace add .agents/plugins
+codex plugin marketplace add Berkantcen/codex-productivity-starter --ref main
 codex plugin add codex-productivity@codex-productivity-starter
 ```
 
 Then start a new Codex thread so the plugin skill is available.
+
+For local development from a cloned checkout, add the repository root instead:
+
+```bash
+codex plugin marketplace add /path/to/codex-productivity-starter
+codex plugin add codex-productivity@codex-productivity-starter
+```
 
 ## Manual Setup
 

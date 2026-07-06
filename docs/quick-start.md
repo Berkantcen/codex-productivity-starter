@@ -12,6 +12,13 @@ After the Codex Productivity plugin is installed, open a new workspace and ask:
 Make this workspace Codex-ready.
 ```
 
+Install it from GitHub with:
+
+```bash
+codex plugin marketplace add Berkantcen/codex-productivity-starter --ref main
+codex plugin add codex-productivity@codex-productivity-starter
+```
+
 Codex will inspect the workspace, create missing starter files, and fill the
 first draft with concrete paths and validation notes where possible.
 

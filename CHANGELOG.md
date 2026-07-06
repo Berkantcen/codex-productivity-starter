@@ -8,6 +8,7 @@
 - Added a bundled script for creating missing starter files safely.
 - Documented plugin-based onboarding for team rollout.
 - Documented the empty-workspace guided intake path for non-technical users.
+- Documented GitHub-based plugin installation for users without a local clone.
 
 ## 0.1.0 - Initial Starter
 
