@@ -27,4 +27,3 @@ git diff --check
 
 For future scripts, add a small validation command next to the script and mention
 it in `README.md`.
-

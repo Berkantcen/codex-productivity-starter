@@ -54,4 +54,3 @@ Return:
 - summary of changes
 - validation results
 - residual risks or follow-ups
-

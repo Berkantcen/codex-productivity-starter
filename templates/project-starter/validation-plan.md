@@ -23,13 +23,13 @@ Run these before larger handoffs or pull requests:
 
 ## Surface-Specific Checks
 
-| Changed Surface | Required Checks |
-| --- | --- |
-| UI/component | `<test command plus manual browser check>` |
-| API/service | `<unit/integration test command>` |
-| Database/schema | `<migration validation command>` |
-| Config/deployment | `<build or smoke command>` |
-| Docs only | `git diff --check` |
+| Changed Surface   | Required Checks                            |
+| ----------------- | ------------------------------------------ |
+| UI/component      | `<test command plus manual browser check>` |
+| API/service       | `<unit/integration test command>`          |
+| Database/schema   | `<migration validation command>`           |
+| Config/deployment | `<build or smoke command>`                 |
+| Docs only         | `git diff --check`                         |
 
 ## Manual QA Checklist
 
@@ -45,4 +45,3 @@ Run these before larger handoffs or pull requests:
 
 When a validation command cannot be run, Codex should say why and provide the
 strongest completed alternative.
-

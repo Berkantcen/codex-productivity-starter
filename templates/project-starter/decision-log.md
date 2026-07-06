@@ -31,4 +31,3 @@ test mocking.
 Applies to: `src/services/`, `src/features/`
 
 Revisit when: The project introduces a new API client architecture.
-

@@ -63,4 +63,3 @@ Ask for:
 Run the focused validation path and report commands, results, and remaining
 manual checks.
 ```
-

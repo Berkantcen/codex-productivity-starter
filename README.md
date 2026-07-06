@@ -76,7 +76,6 @@ docs/
   codex-ready-workspace.md
   token-efficiency.md
   adoption-playbook.md
-  youtube-series-outline.md
 
 examples/
   react-feature-task/
@@ -98,13 +97,6 @@ examples/
 - developers who use Codex daily
 - teams piloting AI-assisted software delivery
 - engineering managers evaluating practical AI workflows
-- creators teaching agentic coding with real project examples
-
-## Video Companion
-
-The repo is designed to work well with a practical content series. See
-[YouTube Series Outline](docs/youtube-series-outline.md) for a first five-video
-sequence.
 
 ## Roadmap
 

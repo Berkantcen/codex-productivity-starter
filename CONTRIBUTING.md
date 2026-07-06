@@ -31,4 +31,3 @@ When opening a PR, include:
 find . -name '*.md' -print
 git diff --check
 ```
-

@@ -38,4 +38,3 @@ Manual checks:
 - open the orders list
 - select each status
 - refresh the page and confirm the selected status remains in the URL
-
