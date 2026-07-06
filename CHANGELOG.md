@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Changed the plugin developer name to Berkant Cen.
 - Added a plugin icon and brand color for the Codex plugin details view.
 - Added the Codex Productivity plugin with a Codex-ready workspace onboarding
   skill.
