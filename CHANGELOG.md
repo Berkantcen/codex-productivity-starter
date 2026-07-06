@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added a plugin icon and brand color for the Codex plugin details view.
 - Added the Codex Productivity plugin with a Codex-ready workspace onboarding
   skill.
 - Added a repo-local plugin marketplace entry for pilot installation.

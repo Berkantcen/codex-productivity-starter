@@ -1,6 +1,6 @@
 {
   "name": "codex-productivity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create concise Codex-ready workspace guidance files from a simple onboarding prompt.",
   "author": {
     "name": "Codex Productivity Starter"
@@ -17,6 +17,9 @@
       "Project guidance files",
       "Token-efficient task setup"
     ],
-    "defaultPrompt": "Make this workspace Codex-ready."
+    "defaultPrompt": "Make this workspace Codex-ready.",
+    "brandColor": "#14B8A6",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg"
   }
 }
