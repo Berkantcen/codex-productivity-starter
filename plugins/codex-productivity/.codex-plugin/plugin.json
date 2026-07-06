@@ -1,0 +1,22 @@
+{
+  "name": "codex-productivity",
+  "version": "0.1.0",
+  "description": "Create concise Codex-ready workspace guidance files from a simple onboarding prompt.",
+  "author": {
+    "name": "Codex Productivity Starter"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Productivity",
+    "shortDescription": "Make a new workspace easier and cheaper for Codex to use.",
+    "longDescription": "Codex Productivity helps teams create short, practical workspace guidance files such as AGENTS.md, repo maps, validation plans, decision logs, task briefs, and handoff summaries.",
+    "developerName": "Codex Productivity Starter",
+    "category": "Productivity",
+    "capabilities": [
+      "Workspace onboarding",
+      "Project guidance files",
+      "Token-efficient task setup"
+    ],
+    "defaultPrompt": "Make this workspace Codex-ready."
+  }
+}

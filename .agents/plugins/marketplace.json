@@ -1,0 +1,20 @@
+{
+  "name": "codex-productivity-starter",
+  "interface": {
+    "displayName": "Codex Productivity Starter"
+  },
+  "plugins": [
+    {
+      "name": "codex-productivity",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-productivity"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

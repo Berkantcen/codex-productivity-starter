@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Ready Workspace"
+  short_description: "Create practical onboarding files for a new Codex workspace."
+  default_prompt: "Make this workspace Codex-ready."

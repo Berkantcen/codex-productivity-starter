@@ -2,6 +2,28 @@
 
 Use this guide to make a repository Codex-ready in about 15 minutes.
 
+## Option A: Plugin Onboarding
+
+Use this path for non-technical users or team rollout.
+
+After the Codex Productivity plugin is installed, open a new workspace and ask:
+
+```text
+Make this workspace Codex-ready.
+```
+
+Codex will inspect the workspace, create missing starter files, and fill the
+first draft with concrete paths and validation notes where possible.
+
+If the workspace is empty, Codex should ask a few plain-language questions first
+about the project name, type of work, expected users, common tasks, boundaries,
+and readiness checks. It can then create useful first drafts without requiring
+the user to know terminal commands or repository structure.
+
+## Option B: Manual Setup
+
+Use this path when you want to copy the files yourself.
+
 ## 1. Copy The Starter
 
 From this repository:
@@ -52,4 +74,3 @@ When Codex has to rediscover something useful, add it to:
 - `AGENTS.md` for operating rules
 
 The starter becomes more valuable as your project learns from real tasks.
-

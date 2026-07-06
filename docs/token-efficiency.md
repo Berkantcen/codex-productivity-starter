@@ -5,7 +5,7 @@ same context from being rediscovered in every task.
 
 ## High-Impact Moves
 
-## 1. Put Stable Context In Files
+### 1. Put Stable Context In Files
 
 Do not paste project structure, commands, and conventions into every prompt.
 Keep them in repo files:
@@ -17,7 +17,7 @@ Keep them in repo files:
 
 Then ask Codex to read only the relevant files.
 
-## 2. Keep Task Briefs Narrow
+### 2. Keep Task Briefs Narrow
 
 A good task brief says:
 
@@ -29,7 +29,7 @@ A good task brief says:
 This prevents the agent from spending tokens on adjacent cleanup or speculative
 architecture work.
 
-## 3. Use Progressive Disclosure
+### 3. Use Progressive Disclosure
 
 Start broad, then load details only when needed:
 
@@ -41,7 +41,7 @@ Start broad, then load details only when needed:
 
 This pattern is more efficient than preloading every standard and every example.
 
-## 4. Record Reusable Decisions
+### 4. Record Reusable Decisions
 
 If Codex discovers a rule that will matter again, add it to `decision-log.md`.
 
@@ -52,7 +52,7 @@ Examples:
 - full test suite requires a local dependency
 - deployments need a specific environment variable
 
-## 5. Prefer Concrete Validation
+### 5. Prefer Concrete Validation
 
 Confidence is cheaper when it comes from commands and manual checks instead of
 long explanation.

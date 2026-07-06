@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Added the Codex Productivity plugin with a Codex-ready workspace onboarding
+  skill.
+- Added a repo-local plugin marketplace entry for pilot installation.
+- Added a bundled script for creating missing starter files safely.
+- Documented plugin-based onboarding for team rollout.
+- Documented the empty-workspace guided intake path for non-technical users.
+
 ## 0.1.0 - Initial Starter
 
 - Added project starter templates.

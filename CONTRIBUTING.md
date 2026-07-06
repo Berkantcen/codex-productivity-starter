@@ -31,3 +31,12 @@ When opening a PR, include:
 find . -name '*.md' -print
 git diff --check
 ```
+
+For plugin changes:
+
+```bash
+python3 plugins/codex-productivity/skills/codex-ready-workspace/scripts/init_codex_workspace.py --help
+```
+
+If you have Codex plugin development helpers installed, also run the plugin and
+skill validators before publishing.

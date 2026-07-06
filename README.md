@@ -8,6 +8,10 @@ you templates for project context, task briefs, validation plans, decision logs,
 and handoff summaries so AI-assisted development uses less repeated context and
 produces more consistent results.
 
+It also includes a Codex plugin for teams that want a simpler onboarding flow:
+users can open a new workspace and ask Codex to make it Codex-ready without
+copying files manually.
+
 ## What This Solves
 
 Most teams waste time and tokens by explaining the same things repeatedly:
@@ -25,6 +29,31 @@ and loaded only when relevant.
 ## Start Here
 
 For the fastest setup, follow [Quick Start](docs/quick-start.md).
+
+For team rollout, install the included Codex plugin and use this prompt in a new
+workspace:
+
+```text
+Make this workspace Codex-ready.
+```
+
+The plugin inspects the workspace, creates missing starter files, preserves
+existing guidance by default, and fills practical first drafts where it can.
+For empty workspaces, it asks a short set of plain-language questions first and
+uses the answers to create useful initial guidance.
+
+To install from this repository as a local marketplace during pilot rollout:
+
+```bash
+codex plugin marketplace add .agents/plugins
+codex plugin add codex-productivity@codex-productivity-starter
+```
+
+Then start a new Codex thread so the plugin skill is available.
+
+## Manual Setup
+
+Use this path when you do not want to install the plugin yet.
 
 Copy the starter files into your project:
 
@@ -81,6 +110,12 @@ examples/
   react-feature-task/
   bug-investigation/
   pr-review/
+
+.agents/plugins/
+  marketplace.json
+
+plugins/
+  codex-productivity/
 ```
 
 ## Principles
@@ -101,6 +136,24 @@ examples/
 ## Roadmap
 
 - Add more real-world task examples.
+- Improve the plugin onboarding flow with guided questions for analysts,
+  product managers, and developers.
 - Add language-specific starter variants.
-- Add a simple setup script.
-- Package the workflow as a Codex plugin after the template proves useful.
+
+## Validation
+
+For documentation changes:
+
+```bash
+find . -name '*.md' -print
+git diff --check
+```
+
+For plugin changes:
+
+```bash
+python3 plugins/codex-productivity/skills/codex-ready-workspace/scripts/init_codex_workspace.py --help
+```
+
+If you have Codex plugin development helpers installed, also run the plugin and
+skill validators before publishing.
