@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- Added a template sync validator to keep manual starter files and plugin
+  bundled assets aligned.
+- Added a GitHub Actions validation workflow for markdown, template sync, and
+  onboarding script checks.
+- Added a sample generated workspace to show what good plugin output looks like.
+- Added a non-engineering analyst task brief example.
+- Clarified installation and validation guidance in the docs.
 - Changed the plugin developer name to Berkant Cen.
 - Added a plugin icon and brand color for the Codex plugin details view.
 - Added the Codex Productivity plugin with a Codex-ready workspace onboarding

@@ -2,6 +2,9 @@
 
 Use this guide to make a repository Codex-ready in about 15 minutes.
 
+If you want a concrete target before starting, inspect
+`examples/generated-workspace/` in this repository.
+
 ## Option A: Plugin Onboarding
 
 Use this path for non-technical users or team rollout.
@@ -12,7 +15,7 @@ After the Codex Productivity plugin is installed, open a new workspace and ask:
 Make this workspace Codex-ready.
 ```
 
-Install it from GitHub with:
+From any shell on the machine where you use Codex, install it from GitHub with:
 
 ```bash
 codex plugin marketplace add Berkantcen/codex-productivity-starter --ref main
@@ -30,6 +33,9 @@ the user to know terminal commands or repository structure.
 ## Option B: Manual Setup
 
 Use this path when you want to copy the files yourself.
+
+If you are reading this from a cloned checkout, run the copy command from this
+repository root or replace the source path with an absolute path.
 
 ## 1. Copy The Starter
 

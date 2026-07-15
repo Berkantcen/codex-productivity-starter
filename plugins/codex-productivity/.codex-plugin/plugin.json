@@ -1,6 +1,6 @@
 {
   "name": "codex-productivity",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Create concise Codex-ready workspace guidance files from a simple onboarding prompt.",
   "author": {
     "name": "Berkant Cen"

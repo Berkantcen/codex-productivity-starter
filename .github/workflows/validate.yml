@@ -1,0 +1,29 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: List markdown files
+        run: find . -name '*.md' -print
+
+      - name: Check diff formatting
+        run: git diff --check
+
+      - name: Validate starter template sync
+        run: python3 scripts/check_template_sync.py
+
+      - name: Validate onboarding script
+        run: python3 plugins/codex-productivity/skills/codex-ready-workspace/scripts/init_codex_workspace.py --help

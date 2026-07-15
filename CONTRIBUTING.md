@@ -30,11 +30,13 @@ When opening a PR, include:
 ```bash
 find . -name '*.md' -print
 git diff --check
+python3 scripts/check_template_sync.py
 ```
 
 For plugin changes:
 
 ```bash
+python3 scripts/check_template_sync.py
 python3 plugins/codex-productivity/skills/codex-ready-workspace/scripts/init_codex_workspace.py --help
 ```
 

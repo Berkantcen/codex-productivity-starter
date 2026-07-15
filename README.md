@@ -30,6 +30,9 @@ and loaded only when relevant.
 
 For the fastest setup, follow [Quick Start](docs/quick-start.md).
 
+If you want to see the expected output first, inspect the sample generated
+workspace in `examples/generated-workspace/`.
+
 For team rollout, install the included Codex plugin and use this prompt in a new
 workspace:
 
@@ -42,7 +45,7 @@ existing guidance by default, and fills practical first drafts where it can.
 For empty workspaces, it asks a short set of plain-language questions first and
 uses the answers to create useful initial guidance.
 
-To install from GitHub:
+From any shell on the machine where you use Codex, install from GitHub with:
 
 ```bash
 codex plugin marketplace add Berkantcen/codex-productivity-starter --ref main
@@ -51,7 +54,8 @@ codex plugin add codex-productivity@codex-productivity-starter
 
 Then start a new Codex thread so the plugin skill is available.
 
-For local development from a cloned checkout, add the repository root instead:
+For local development from a cloned checkout, add this repository root instead.
+Using an absolute path makes the target unambiguous:
 
 ```bash
 codex plugin marketplace add /path/to/codex-productivity-starter
@@ -117,12 +121,17 @@ examples/
   react-feature-task/
   bug-investigation/
   pr-review/
+  analyst-workspace/
+  generated-workspace/
 
 .agents/plugins/
   marketplace.json
 
 plugins/
   codex-productivity/
+
+scripts/
+  check_template_sync.py
 ```
 
 ## Principles
@@ -143,8 +152,6 @@ plugins/
 ## Roadmap
 
 - Add more real-world task examples.
-- Improve the plugin onboarding flow with guided questions for analysts,
-  product managers, and developers.
 - Add language-specific starter variants.
 
 ## Validation
@@ -154,11 +161,13 @@ For documentation changes:
 ```bash
 find . -name '*.md' -print
 git diff --check
+python3 scripts/check_template_sync.py
 ```
 
 For plugin changes:
 
 ```bash
+python3 scripts/check_template_sync.py
 python3 plugins/codex-productivity/skills/codex-ready-workspace/scripts/init_codex_workspace.py --help
 ```
 

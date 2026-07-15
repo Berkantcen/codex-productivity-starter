@@ -24,4 +24,3 @@ Use this as the expected final response shape for Codex tasks.
 
 1. `<most important file>`
 2. `<next file>`
-
